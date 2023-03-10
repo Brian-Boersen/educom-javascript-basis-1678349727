@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        const name = "bootleg bob";
+
+        //length of string
+        const length = name.length;
+
+        //case manipulation
+        const lowercase = name.toLowerCase();
+        const uppercase = name.toUpperCase();
+
+        //replace (only 1)
+        const replaced = name.replace("o","a");
+        //replace all
+        const replaceAll = name.replace(/o/g, "a");
+
+        //substring
+        const substr = name.substring(2,8);
+
+        //string to array
+        const toArray = substr.split(' ');
+
+        console.log({
+            length: length,
+            lowercase: lowercase,
+            uppercase: uppercase,
+            replaced: replaced,
+            replaceAll: replaceAll,
+            substr: substr,
+            toArray: toArray
+        });
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
