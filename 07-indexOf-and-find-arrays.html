@@ -8,10 +8,22 @@
 
     <script>
         //const var
-        const beatles = ["John", "Paul", "George", "Ringo"];
+        const fruits = ["Apple", "Banana", "Apple", "Tomato"];
+        const numbers = [4,9,16,25,29];
 
-        //var
+        const findOver18 = (item) => {
+            return item >=18;
+        }
         
+        //indexOf
+        const a = fruits.indexOf("Apple");
+        const b = fruits.lastIndexOf("Apple");
+
+        //find
+        const c = numbers.find(findOver18);
+        const d = numbers.findIndex(findOver18);
+
+        console.log({a:a, b: b , c:c, d:d});
 
     </script>
 </head>

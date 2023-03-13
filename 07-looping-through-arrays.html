@@ -19,6 +19,12 @@
         beatles.forEach(inLoop);
         console.log(txt);
 
+        beatles.forEach((value,index,array) => {
+            txt +=`${ value.toUpperCase()} - `;
+        });
+
+        console.log(txt);
+
     </script>
 </head>
 <body>

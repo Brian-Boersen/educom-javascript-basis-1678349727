@@ -10,9 +10,12 @@
         //const var
         const beatles = ["John", "Paul", "George", "Ringo"];
 
-        //var
-        
+        //mapping creates a new array and coppies the called array you can also put in a function to alter content
+        const n = beatles.map( item => {
+            return(item.toUpperCase());
+        });
 
+        console.log(n);
     </script>
 </head>
 <body>

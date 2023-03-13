@@ -8,10 +8,20 @@
 
     <script>
         //const var
-        const beatles = ["John", "Paul", "George", "Ringo"];
-
-        //var
+        const shoppingCart = [12.49,2.75,27.20,4.2];
+        //the total price of the shopping cart
+        let totalPrice = 0;
         
+        //function to calculate a total price
+        const calcTotalPrice = (value,index,array) =>{
+            totalPrice += value;
+        }
+
+
+        //go through the shopping cart and calculate the total price
+        shoppingCart.forEach(calcTotalPrice);
+
+        console.log("$" + totalPrice);
 
     </script>
 </head>

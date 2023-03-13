@@ -8,10 +8,18 @@
 
     <script>
         //const var
-        const beatles = ["John", "Paul", "George", "Ringo"];
-
-        //var
+        const numbers = [45,4,9,16,25];
         
+        const myFunction = (value,index,array) => {
+            return value > 18;
+        };
+
+        //filter through array
+        const over18 = numbers.filter(myFunction)
+
+        //or filter through this way
+        const n = numbers.filter(value => 18);
+        console.log(over18, n);
 
     </script>
 </head>
