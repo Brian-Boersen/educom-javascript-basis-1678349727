@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        //create object on the fly
+        const car = {
+            barnd: "Fiat",
+            type: "500",
+            color: "red",
+            Weight: 850
+        };
+
+        //you can add a variable to the object
+        car.nummberOfDoors = 2;
+        console.log(car);
+
+        //you can even add a method to the object
+        car.getColor = function() {
+            return (this.color);
+        }
+
+        console.log("color: " + car.getColor());
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
